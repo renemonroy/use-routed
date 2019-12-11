@@ -13,23 +13,38 @@ npm install --save use-routed
 ## Usage
 
 ```tsx
-import * as React from "react";
-import { useRouted } from "use-routed";
+import React from "react";
+import useRouted, { Link, navigate } from "use-routed";
 
-const Home = () => <p>Welcome!</p>;
-const NotFound = () => <p>404</p>;
-const User = ({ username }) => <p>Hi {username}!</p>;
+function Home() {
+  const [username, setUsername] = React.useState("");
+  return (
+    <section>
+      <p>What's your name?</p>
+      <input type="text" onChange={e => setUsername(e.target.value)} />
+      <button onClick={() => username && navigate(`/${username}`)}>Ok</button>
+    </section>
+  );
+}
+
+function User({ username }) {
+  return (
+    <section>
+      <p>Hi {username}!</p>
+      <Link href="/">Return</Link>
+    </section>
+  );
+}
 
 const routes = {
   "/": Home,
-  "/404": NotFound,
   "/:username": User
 };
 
-const Example = () => {
-  const routedComponent = useRouted(routes);
-  return <div>{routedComponent}</div>;
-};
+export default function App() {
+  const example = useRouted(routes);
+  return <div className="app">{example}</div>;
+}
 ```
 
 ## License
