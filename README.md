@@ -12,7 +12,7 @@ npm install --save use-routed
 
 ## Usage
 
-```tsx
+```jsx
 import React from "react";
 import useRouted, { Link, navigate } from "use-routed";
 
@@ -42,9 +42,33 @@ const routes = {
 };
 
 export default function App() {
-  const example = useRouted(routes);
-  return <div className="app">{example}</div>;
+  const routedComponent = useRouted(routes);
+  return <div className="app">{routedComponent}</div>;
 }
+```
+
+### `useRouted`
+
+Pass the available routes and the hook will return a component based on the window location.
+
+```jsx
+const routedComponent = useRouted({ "/": Home, "/about" About });
+```
+
+### `navigate`
+
+Simulates navigation by updating popstate from a given URL. Use any of the paths passed on the initial configuration.
+
+```jsx
+navigate("/about");
+```
+
+### `Link`
+
+Replaces anchor's default behavior and uses `navigate` to move between pages.
+
+```jsx
+<Link href="/about">
 ```
 
 ## License
