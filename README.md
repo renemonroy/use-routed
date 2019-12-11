@@ -14,13 +14,10 @@ npm install --save use-routed
 
 ```tsx
 import * as React from "react";
-
 import { useRouted } from "use-routed";
 
 const Home = () => <p>Welcome!</p>;
-
 const NotFound = () => <p>404</p>;
-
 const User = ({ username }) => <p>Hi {username}!</p>;
 
 const routes = {
