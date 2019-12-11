@@ -1,4 +1,4 @@
-# 🛣️use-routed
+# 🛣️ use-routed
 
 > Ridiculously simplified way to render routed components. Useful for quick prototypes or small projects.
 
