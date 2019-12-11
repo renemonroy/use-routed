@@ -36,7 +36,7 @@ const routes = {
 };
 
 const Example = () => {
-  const example = useMyHook();
+  const example = useMyHook(routes);
   return <div>{example}</div>;
 };
 ```
