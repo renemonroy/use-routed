@@ -1,6 +1,6 @@
 # use-routed
 
-> React hook that renders routed components.
+> React Hook used to render components based on routes.
 
 <!-- [![NPM](https://img.shields.io/npm/v/use-routed.svg)](https://www.npmjs.com/package/use-routed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) -->
 
