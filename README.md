@@ -30,8 +30,8 @@ const routes = {
 };
 
 const Example = () => {
-  const example = useMyHook(routes);
-  return <div>{example}</div>;
+  const routedComponent = useRouted(routes);
+  return <div>{routedComponent}</div>;
 };
 ```
 
