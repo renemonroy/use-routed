@@ -1,6 +1,6 @@
 # 🛣️ use-routed
 
-> Ridiculously simplified way to render routed components. Useful for quick prototypes or small projects.
+> Ridiculously simplified way to render routed components with History api. Useful for quick prototypes or small projects.
 
 <!-- [![NPM](https://img.shields.io/npm/v/use-routed.svg)](https://www.npmjs.com/package/use-routed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) -->
 
@@ -84,7 +84,9 @@ const { currentItems, numOfPages } = React.useMemo(
 
 ## Example
 
-The example is a simple Gists Previewer that shows the public gists from a given user with History api. Run `yarn start` at **example** folder.
+The example is a simple Gists Previewer that shows the public gists from a given user.
+
+Run `yarn start` at **example** folder.
 
 ## License
 
