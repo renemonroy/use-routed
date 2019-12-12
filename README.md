@@ -47,10 +47,6 @@ export default function App() {
 }
 ```
 
-### Example
-
-The example is a simple Gists Previewer that shows the public gists from a given user with History api. Run `yarn start` at **example** folder.
-
 ### `useRouted`
 
 Pass the available routes and the hook will return a component based on the window location.
@@ -85,6 +81,10 @@ const { currentItems, numOfPages } = React.useMemo(
   [someItems, somePage, itemsPerPage]
 );
 ```
+
+## Example
+
+The example is a simple Gists Previewer that shows the public gists from a given user with History api. Run `yarn start` at **example** folder.
 
 ## License
 
