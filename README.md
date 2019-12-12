@@ -49,7 +49,7 @@ export default function App() {
 
 ### Example
 
-The example is a simple Gists Previewer that shows the public gists from a given user. Run `yarn start` at **example** folder.
+The example is a simple Gists Previewer that shows the public gists from a given user with History api. Run `yarn start` at **example** folder.
 
 ### `useRouted`
 
