@@ -47,6 +47,10 @@ export default function App() {
 }
 ```
 
+### Example
+
+The example is a simple Gists Previewer that shows the public gists from a given user. Run `yarn start` at **example** folder.
+
 ### `useRouted`
 
 Pass the available routes and the hook will return a component based on the window location.
