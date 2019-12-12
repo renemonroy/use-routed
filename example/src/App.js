@@ -1,32 +1,22 @@
 import React from "react";
-import useRouted, { Link, navigate } from "use-routed";
+import useRouted from "use-routed";
 
-function Home() {
-  const [username, setUsername] = React.useState("");
-  return (
-    <section>
-      <p>What's your name?</p>
-      <input type="text" onChange={e => setUsername(e.target.value)} />
-      <button onClick={() => username && navigate(`/${username}`)}>Ok</button>
-    </section>
-  );
-}
-
-function User({ username }) {
-  return (
-    <section>
-      <p>Hi {username}!</p>
-      <Link href="/">Return</Link>
-    </section>
-  );
-}
+import { GistsProvider } from "./utils/GistsStore";
+import Home from "./pages/Home";
+import User from "./pages/User";
+import NotFound from "./pages/NotFound";
 
 const routes = {
   "/": Home,
+  "/404": NotFound,
   "/:username": User
 };
 
 export default function App() {
-  const example = useRouted(routes);
-  return <div className="app">{example}</div>;
+  const routedComponent = useRouted(routes);
+  return (
+    <div className="App">
+      <GistsProvider>{routedComponent}</GistsProvider>
+    </div>
+  );
 }

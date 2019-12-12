@@ -55,6 +55,14 @@ Pass the available routes and the hook will return a component based on the wind
 const routedComponent = useRouted({ "/": Home, "/about" About });
 ```
 
+### `Link`
+
+Navigates between pages by using the pathanmes set. It replaces anchor's default behavior.
+
+```jsx
+<Link href="/about">
+```
+
 ### `navigate`
 
 Simulates navigation by updating popstate from a given URL. Use any of the paths passed on the initial configuration.
@@ -63,12 +71,15 @@ Simulates navigation by updating popstate from a given URL. Use any of the paths
 navigate("/about");
 ```
 
-### `Link`
+### `paginate`
 
-Replaces anchor's default behavior and uses `navigate` to move between pages.
+Helper that creates a pagination object from a set of given items. Use it with `React.useMemo` for perfomance boost.
 
 ```jsx
-<Link href="/about">
+const { currentItems, numOfPages } = React.useMemo(
+  () => paginate(someItems, somePage, itemsPerPage),
+  [someItems, somePage, itemsPerPage]
+);
 ```
 
 ## License

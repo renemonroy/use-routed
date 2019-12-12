@@ -1,5 +1,4 @@
-import { IRoutes, IRoute, IRouteConfig } from "./useRouted.types";
-
+import { IRoutes, IRoute, IRouteConfig } from "./useRouted";
 const loc = window.location;
 
 /**

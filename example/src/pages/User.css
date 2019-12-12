@@ -1,0 +1,57 @@
+.user-page .profile {
+  text-align: center;
+  padding: 1rem;
+}
+
+.user-page .profile img {
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+  height: 160px;
+  width: 160px;
+}
+
+.user-page .profile h3 {
+  margin: 1rem 0;
+}
+
+.user-page .gist {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: block;
+  margin: 0 0 1rem;
+  padding: 1.5rem;
+}
+
+.user-page .gist-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-page .gist-date {
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+.user-page .gist-description {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-page .gist-meta {
+  color: #666666;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.user-page .gists-navigation {
+  margin: 2rem 0;
+}

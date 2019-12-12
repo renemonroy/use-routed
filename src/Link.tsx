@@ -1,7 +1,7 @@
 import React from "react";
-
-import { AnchorProps } from "./Link.types";
 import navigate from "./navigate";
+
+export type AnchorProps = JSX.IntrinsicElements["a"];
 
 /**
  * Navigates by using pushState while preventing default anchor's behavior
