@@ -1,6 +1,6 @@
 {
   "name": "@renemn/use-routed",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React hook that renders routed components (pages).",
   "author": "renemonroy",
   "license": "MIT",
