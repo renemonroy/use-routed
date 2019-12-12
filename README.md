@@ -2,7 +2,7 @@
 
 > Ridiculously simplified way to render routed components with History api. Useful for quick prototypes or small projects.
 
-[![NPM](https://img.shields.io/npm/v/use-routed.svg)](https://www.npmjs.com/package/use-routed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@renemn/use-routed.svg)](https://www.npmjs.com/package/@renemn/use-routed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
